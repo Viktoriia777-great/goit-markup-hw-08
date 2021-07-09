@@ -960,6 +960,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__filter {
+    justify-content: center;
     margin-bottom: 50px;
   }
 }
@@ -973,9 +974,28 @@ img {
   align-items: center;
   margin-top: -30px;
 }
+@media screen and (min-width: 1200px) {
+  .project {
+    margin-left: -30px;
+  }
+}
 
 .projekt__choice {
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .projekt__choice {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projekt__choice {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .content {
@@ -990,6 +1010,7 @@ img {
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -999,21 +1020,31 @@ img {
 
 .content__item {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
   text-decoration: none;
 }
+@media screen and (min-width: 1200px) {
+  .content__item {
+    font-size: 18px;
+  }
+}
 
 .content__text {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 4px;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .content__text {
+    font-size: 16px;
+  }
 }
 
 .card__thumb {

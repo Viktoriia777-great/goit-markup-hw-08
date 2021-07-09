@@ -49,6 +49,7 @@
     //  justify-content: center; 
      margin-bottom: 30px; 
      @media screen and (min-width: 1200px){
+         justify-content: center;
          margin-bottom: 50px;
      }                   
 }
@@ -60,15 +61,26 @@
     justify-content: center;
     align-items: center;
     margin-top: -30px;
-    // margin-left: -30px;  
+    @media screen and (min-width: 1200px){
+        margin-left: -30px; 
+    }
+
+    
    
 } 
 .projekt__choice{
     margin-top: 30px;
     // margin-top: 30px;
-    //  flex-basis: calc((100% - 90px) / 3);
-    // margin-left: 30px;
-    // margin-top: 30px;
+    @media screen and (min-width: 768px) {
+          flex-basis: calc((100% - 60px) / 2);
+         margin-left: 30px;
+         margin-top: 30px;        
+    }
+    @media screen and (min-width: 1200px) {
+          flex-basis: calc((100% - 90px) / 3);
+           margin-left: 30px;
+           margin-top: 30px;        
+    } 
 }
 .content{
     text-decoration: none;  
@@ -81,6 +93,7 @@
    align-items: center;
    justify-content: center;
     max-width: 100%;
+    max-height: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -92,20 +105,25 @@
 
 .content__item{
     font-weight: $font-weight-bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2.000;
     letter-spacing: 0.06em;
     color: $main-color-headers;
     text-decoration: none;
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
 }
 .content__text{
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.875;      
     letter-spacing: $letter-spacing-text;
     color: $main-text-color;
     margin-top: 4px;
     text-decoration: none;
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;}
 } 
 .card__thumb{
     position: relative;
