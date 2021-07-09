@@ -19,6 +19,16 @@
    background: $white-color; 
      width: 450px;
    //   height: 581px;
+
+   @media screen and (max-width: 479.98px){
+      max-width: 318px;
+      max-height: 100%;  
+  }
+
+  @media screen and (min-width: 768px){
+   width: 528px;
+   
+}
 }
 
 .modal__tape{

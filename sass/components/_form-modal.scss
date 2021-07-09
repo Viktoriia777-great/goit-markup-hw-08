@@ -20,7 +20,8 @@
     color: $main-color-headers;
 }
 .modal__input{    
-    width: 85%;
+    
+    width: 77%;
     height: 12px;
     margin-top: 4px;
     padding: 12px 12px 12px 42px;
@@ -39,6 +40,13 @@
    &:focus + .modal__icon{
     fill: $color-button-logo;                   
 }
+@media screen and (min-width: 479.98px){
+    width: 85%;
+}
+@media screen and (min-width: 768px){
+    width: 88%;
+    
+ }
 }      
 .modal__icon{
     position: absolute; 
@@ -52,6 +60,7 @@
 }
 .modal__textarea{
     display: block;
+    resize: none;
     width: 100%;
     height: 120px;
     box-sizing: border-box;
@@ -91,31 +100,40 @@
 .modal__icon--check{
     display: inline-block;
      width: 11px;
-     height: 8px;
-    // width: 15px;
-    // height: 15px; 
+     height: 8px;    
    border: 1px solid $main-color-headers;
    border-radius: 2px;
    margin-right: 9px;
-   margin-left: 14px;                
+   margin-left: 14px;  
+
+   @media screen and (min-width: 768px){
+    width: 15px;
+    height: 15px;     
+ }
 }
 .modal__consent{
      display: flex; 
     align-items: center; 
     font-size: 12px;   
-    line-height: 1.166; 
-    // font-size: $font-size-text;
-    // line-height: 1.71;
+    line-height: 1.166;   
     color: $main-text-color;
+
+    @media screen and (min-width: 768px){
+         font-size: $font-size-text;
+         line-height: 1.71;   
+     }
 }
 .modal__contract{
     font-size: 12px;   
-    line-height: 1.166; 
-    // font-size: $font-size-text;
-    // line-height: 1.714;
+    line-height: 1.166;    
     letter-spacing: $letter-spacing-text;
     color: $color-button-logo;
     text-decoration: underline;  
+
+    @media screen and (min-width: 768px){
+        font-size: $font-size-text;
+        line-height: 1.714;
+    }
 } 
 .modal__btn{
     font-size: $font-size-btn;
