@@ -1,7 +1,12 @@
 /* Постоянные клиенты */
-.client{       
-    padding-top: 94px;
-    padding-bottom: 94px; } 
+.client{   
+   padding-top: 60px;
+   padding-bottom: 60px;
+   @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+    padding-bottom: 94px;
+  }  
+     } 
 
 .client-list__icon{
    width: 106px;
@@ -9,31 +14,58 @@
    align-items: center;
    border: none;    
 }
- .client-list  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &--company:not(:last-child){
-      margin-right: 30px; 
-  }
-}
-
 .client-list__link{
-     display: flex;
-    justify-content: center;
-    align-items: center; 
-    fill: $company-social-color;
-    width: 170px;
-    height: 92px;
-    border: 1px solid $client-list-link;
-    outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+  fill: $company-social-color;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  height: 92px;
+  border: 1px solid $client-list-link;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus{
-   fill: $color-button-logo;
-   border: 1px solid $color-button-logo;
+  &:hover,
+  &:focus{
+ fill: $color-button-logo;
+ border: 1px solid $color-button-logo;
+}
+@media screen and (min-width: 1200px) {
+   width: 170px;     
 }
 }
+
+ .client-list  {
+    
+    margin-left: auto;
+    margin-right: auto;
+   margin-bottom: -30px;    
+   @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    } 
+    
+    
+}
+.client-list__company{
+   width: 100%;
+   margin-bottom: 30px;
+
+   @media screen and (min-width: 480px) {
+       flex-basis: calc((100% - 60px) / 2);
+       margin-left: 30px;           
+   }
+   @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 90px) / 3);
+      margin-left: 30px;           
+  }
+   @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);       
+}
+}
+
+
 
