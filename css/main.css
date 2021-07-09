@@ -328,6 +328,7 @@ img {
 @media screen and (min-width: 1200px) {
   .feature {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -399,8 +400,14 @@ img {
 
 /* Чем занимаемся */
 .work {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .work__title,
@@ -995,8 +1002,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #FFFFFF;
-  width: 528px;
-  height: 581px;
+  width: 450px;
 }
 
 .modal__tape {
@@ -1060,7 +1066,7 @@ img {
 }
 
 .modal__input {
-  width: 390px;
+  width: 85%;
   height: 12px;
   margin-top: 4px;
   padding: 12px 12px 12px 42px;
@@ -1090,7 +1096,7 @@ img {
 
 .modal__textarea {
   display: block;
-  width: 448px;
+  width: 100%;
   height: 120px;
   box-sizing: border-box;
   resize: none;
@@ -1128,8 +1134,8 @@ img {
 
 .modal__icon--check {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 8px;
   border: 1px solid #212121;
   border-radius: 2px;
   margin-right: 9px;
@@ -1139,14 +1145,14 @@ img {
 .modal__consent {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.166;
   color: #757575;
 }
 
 .modal__contract {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: #2196F3;
   text-decoration: underline;
@@ -1259,4 +1265,8 @@ img {
 .menu-container.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.mobale-social__item--link {
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */

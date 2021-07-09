@@ -20,7 +20,7 @@
     color: $main-color-headers;
 }
 .modal__input{    
-    width: 390px;
+    width: 85%;
     height: 12px;
     margin-top: 4px;
     padding: 12px 12px 12px 42px;
@@ -52,7 +52,7 @@
 }
 .modal__textarea{
     display: block;
-    width: 448px;
+    width: 100%;
     height: 120px;
     box-sizing: border-box;
     resize: none;
@@ -90,9 +90,10 @@
 }
 .modal__icon--check{
     display: inline-block;
-  
-    width: 15px;
-    height: 15px; 
+     width: 11px;
+     height: 8px;
+    // width: 15px;
+    // height: 15px; 
    border: 1px solid $main-color-headers;
    border-radius: 2px;
    margin-right: 9px;
@@ -100,14 +101,18 @@
 }
 .modal__consent{
      display: flex; 
-    align-items: center;     
-    font-size: $font-size-text;
-    line-height: 1.71;
+    align-items: center; 
+    font-size: 12px;   
+    line-height: 1.166; 
+    // font-size: $font-size-text;
+    // line-height: 1.71;
     color: $main-text-color;
 }
 .modal__contract{
-    font-size: $font-size-text;
-    line-height: 1.714;
+    font-size: 12px;   
+    line-height: 1.166; 
+    // font-size: $font-size-text;
+    // line-height: 1.714;
     letter-spacing: $letter-spacing-text;
     color: $color-button-logo;
     text-decoration: underline;  
