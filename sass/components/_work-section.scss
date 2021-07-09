@@ -12,12 +12,17 @@
 .team__title,
 .client__title{
     font-weight: $font-weight-bold;
-    font-size: 36px;
-    line-height: 1.167;
+    font-size: 28px;
+    line-height: 1.269;
     text-align: center;
     letter-spacing: $letter-spacing-text;
     color: $main-color-headers;
     margin-bottom: 50px;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 1.167;
+        margin-bottom: 50px;
+    }
 } 
  .work__list{
     display: flex;

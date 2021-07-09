@@ -12,7 +12,6 @@
 /* свойства контейнера */
 .conteiner {
   box-sizing: border-box;
-  outline: 1px solid tomato;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -94,11 +93,17 @@ img {
 .footer-nav__logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.166;
   text-decoration: none;
   width: 145px;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav__logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .sait-nav {
@@ -212,25 +217,44 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (min-width: 1200px) {
+  .sait-nav__mail,
+.sait-nav__phone {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+}
 
 .sait-nav__icon--mail {
   fill: currentColor;
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 10px;
 }
 .sait-nav__icon--mail:hover, .sait-nav__icon--mail:focus {
   fill: #2196F3;
 }
+@media screen and (min-width: 1200px) {
+  .sait-nav__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .sait-nav__icon--phone {
   width: 10px;
-  height: 16px;
+  height: 14px;
   fill: currentColor;
   margin-right: 10px;
 }
 .sait-nav__icon--phone:hover, .sait-nav__icon--phone:focus {
   fill: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .sait-nav__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 /* Hero section class="hero"*/
@@ -284,7 +308,7 @@ img {
 .hero__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.364;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -297,6 +321,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
+    line-height: 1.364;
   }
 }
 
@@ -415,12 +440,21 @@ img {
 .team__title,
 .client__title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.269;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .work__title,
+.team__title,
+.client__title {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
 }
 
 .work__list {
@@ -507,23 +541,6 @@ img {
 @media screen and (min-width: 1200px) {
   .team__scorecard {
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-.team__title {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 1.269;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .team__title {
-    font-size: 36px;
-    line-height: 1.167;
-    margin-bottom: 50px;
   }
 }
 
@@ -1162,11 +1179,16 @@ img {
 .modal__title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__input {
@@ -1366,6 +1388,9 @@ img {
   padding-bottom: 0;
   padding-left: 10px;
   padding-right: 10px;
+}
+.mobale-social__list .mobale-social__link--last {
+  font-size: 3.2vw;
 }
 .mobale-social__list .mobale-social__link:hover, .mobale-social__list .mobale-social__link:focus {
   color: #2196F3;

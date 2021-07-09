@@ -103,24 +103,32 @@
     line-height: 1.166;
     letter-spacing: 0.02em; 
     color: $main-text-color;   
-        
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.143;                
+    }
+           
 }
 
 
 .sait-nav__icon--mail{
    fill: currentColor;
-   width: 16px;
-   height: 12px;
+   width: 14px;
+   height: 10px;
    margin-right: 10px; 
    
    &:hover,
    &:focus{
      fill: $color-button-logo;          
    }  
+   @media screen and (min-width: 1200px){
+    width: 16px;
+    height: 12px;
+   }
 }     
 .sait-nav__icon--phone {
     width: 10px;
-    height: 16px; 
+    height: 14px; 
     fill: currentColor;
     margin-right: 10px;
 
@@ -128,4 +136,8 @@
     &:focus{
      fill: $color-button-logo;          
    }  
+   @media screen and (min-width: 1200px){
+    width: 10px;
+    height: 16px; 
+   }
 }
