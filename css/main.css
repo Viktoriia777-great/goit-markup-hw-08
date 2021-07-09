@@ -975,6 +975,11 @@ img {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__filter {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .portfolio__filter {
     justify-content: center;
