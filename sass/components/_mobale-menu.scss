@@ -101,7 +101,7 @@
 .mobale-social__item--link{
     margin-left: 10px;
 }
-.menu-container .mobale-social__item:nth-child(n+2)::before{
+.menu-container .mobale-social__item:nth-child(-n + 3)::after{
   content: " ";
   display: inline-flex;
  align-items: center;
