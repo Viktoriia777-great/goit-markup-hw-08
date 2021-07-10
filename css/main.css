@@ -1456,6 +1456,7 @@ img {
 }
 
 .menu-container .mobale-social__item:nth-child(-n+3)::after {
+  position: absolute;
   content: " ";
   display: inline-flex;
   align-items: center;

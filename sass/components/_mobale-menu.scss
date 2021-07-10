@@ -5,6 +5,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 99;
+   
     
     .conteiner-mobile{
         position: relative;
@@ -102,6 +103,7 @@
     margin-left: 10px;
 }
 .menu-container .mobale-social__item:nth-child(-n + 3)::after{
+    position: absolute;
   content: " ";
   display: inline-flex;
  align-items: center;
