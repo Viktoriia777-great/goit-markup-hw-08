@@ -46,8 +46,60 @@
                      +38 096 111 11 11</a>                   
                </li>
            </ul>  
-        </div>    
-    </header>
+           <button type="button" class="menu-open">
+             <svg  width="40" height="40">
+               <use class="icon-menu" href="./images/icon/symbol-menu.svg#icon-menu" ></use>
+             </svg>
+           </button>          
+       </div> 
+ 
+         <div class="menu-container is-hidden">
+           <div class="conteiner-mobile">
+             <button type="button" class="menu-close">
+               <svg  width="40" height="40">
+                 <use class="icon-cross" href="./images/icon/symbol-menu.svg#icon-cross" ></use>
+               </svg>
+             </button>
+             <ul class="mobale-menu__list list">
+               <li class="mobail-menu__item">
+                 <a href="./index.html" class="mobail-menu__link link">Студия</a>
+             </li>                 
+             <li class="mobail-menu__item">
+                 <a href="./portfolio.html" class="mobail-menu__link link">Портфолио</a>
+             </li>
+             <li class="mobail-menu__item">
+                 <a href="" class="mobail-menu__link link">Контакты</a>
+             </li>
+            </ul>
+            <div class="mobale-connektion">
+             <ul class="mobale-contakt__list list">             
+              <li class="mobale-contakt__item">
+                 <a href="tel:+380961111111" class="mobale-contakt__phone link" >                  
+                   +38 096 111 11 11</a>  
+               </li>  
+               <li class="mobale-contakt__item">
+                 <a href="mailto:info@devstudio.com" class="mobale-contakt__mail link" >              
+                   info@devstudio.com</a>                
+                </li>       
+             </ul>
+             <ul class="mobale-social__list">
+               <li class="mobale-social__item">
+                 <a href="#" class="mobale-social__link link">Instagram</a>
+               </li>
+               <li class="mobale-social__item">
+                 <a href="#" class="mobale-social__link link">Twitter</a>
+               </li>
+               <li class="mobale-social__item">
+                 <a href="#" class="mobale-social__link link">Facebook</a>
+               </li>
+               <li class="mobale-social__item--link">
+                 <a href="#" class="mobale-social__link--last link">LinkedIn</a>
+               </li>
+             </ul>
+           </div>
+           </div>
+           </div>           
+   </header>
 <main>
       <!-- Выбор проектов -->
       <section class="portfolio">
@@ -292,5 +344,8 @@
               </div>          
       </div>                
     </footer>
+
+    <script src="./js/menu.js">
+    </script>
 </body>
 </html>

@@ -1343,6 +1343,7 @@ img {
   top: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 99;
 }
 .menu-container .conteiner-mobile {
   position: relative;
@@ -1392,11 +1393,14 @@ img {
   padding-bottom: 0;
   padding-left: 10px;
   padding-right: 10px;
+  color: #2196F3;
 }
 .mobale-social__list .mobale-social__link--last {
   font-size: 3.2vw;
+  color: #2196F3;
 }
-.mobale-social__list .mobale-social__link:hover, .mobale-social__list .mobale-social__link:focus {
+
+.sait-nav--active {
   color: #2196F3;
 }
 
@@ -1405,6 +1409,7 @@ img {
 }
 .mobale-contakt__list .mobale-contakt__phone {
   font-size: 8vw;
+  color: #2196F3;
 }
 .mobale-contakt__list .mobale-contakt__mail {
   font-size: 5vw;

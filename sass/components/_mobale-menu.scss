@@ -4,6 +4,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 99;
     
     .conteiner-mobile{
         position: relative;
@@ -55,23 +56,24 @@
         padding-bottom: 0;
         padding-left: 10px;
         padding-right: 10px;
+        color: $color-button-logo;
 
         &--last{
             font-size: 3.2vw; 
-        }
-                    
-                      
-        &:hover,
-        &:focus{
             color: $color-button-logo;
-        }
+           
+        }                 
     }
+}
+.sait-nav--active{
+    color: $color-button-logo;
 }
 .mobale-contakt__list{
     padding-left: 10px;
 
     .mobale-contakt__phone{
         font-size: 8vw;
+        color: $color-button-logo;
     }
     .mobale-contakt__mail{
         font-size: 5vw;
