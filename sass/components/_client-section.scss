@@ -32,6 +32,10 @@
  fill: $color-button-logo;
  border: 1px solid $color-button-logo;
 }
+@media screen and (min-width: 768px) {
+   width: 226px;
+   
+}
 @media screen and (min-width: 1200px) {
    width: 170px;     
 }

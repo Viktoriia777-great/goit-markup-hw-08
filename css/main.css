@@ -30,7 +30,7 @@
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -318,10 +318,16 @@ img {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.364;
+    width: 696px;
   }
 }
 
@@ -445,7 +451,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .work__title,
@@ -628,6 +634,11 @@ img {
   fill: #2196F3;
   border: 1px solid #2196F3;
 }
+@media screen and (min-width: 768px) {
+  .client-list__link {
+    width: 226px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .client-list__link {
     width: 170px;
@@ -802,10 +813,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .socialy--list:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .socialy {
+    margin-bottom: 100px;
+  }
 }
 
 .socialy__svg {
@@ -868,7 +884,7 @@ img {
 
 .subscribe__email {
   display: flex;
-  width: 90vw;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
@@ -885,7 +901,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .subscribe__email {
-    width: 80vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1124,7 +1140,7 @@ img {
     max-height: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal__content {
     width: 528px;
   }
@@ -1217,7 +1233,7 @@ img {
     width: 85%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal__input {
     width: 88%;
   }
@@ -1395,7 +1411,10 @@ img {
   color: #2196F3;
 }
 
-.sait-nav--active {
+.mobail-menu__link--activ {
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
   color: #2196F3;
 }
 
@@ -1419,6 +1438,9 @@ img {
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
+.mobail-menu__link--activ {
+  color: #2196F3;
+}
 
 .mobale-contakt__item:not(:last-child) {
   margin-bottom: 32px;
@@ -1440,6 +1462,5 @@ img {
   width: 1px;
   height: 22px;
   padding-top: 8px;
-  margin-right: 6px;
   background-color: #757575;
 }/*# sourceMappingURL=main.css.map */

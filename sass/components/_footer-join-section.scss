@@ -1,7 +1,6 @@
 /* Присоединяйтесь */
 .footer-join{
     display: flex;
-//    justify-content: center; 
 align-items: center; 
    flex-direction: column; 
 
@@ -12,7 +11,6 @@ align-items: center;
     justify-content: center; 
     margin-right: 0;
    }
-
 } 
 .footer-join__title{
      text-transform: uppercase;
@@ -31,10 +29,13 @@ align-items: center;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-bottom: 100px;   
+   margin-bottom: 60px;   
    
    &--list:not(:last-child){
     margin-right: 10px;
+}
+@media screen and (min-width: 1200px){
+    margin-bottom: 100px;  
 }
 }
 
