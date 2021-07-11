@@ -74,13 +74,16 @@
     text-transform: uppercase;
     text-align: center;
     color: $white-color;
+    width: 100%;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
+    @media screen and (min-width: 480px){
+      width: 360px; 
+    }
     @media screen and (min-width: 768px) {
-      width: 360px;
-      
+      width: 360px;            
   }
     @media screen and (min-width: 1200px) {
       font-size: 44px;
@@ -88,7 +91,31 @@
       width: 696px;
     }
   }
-
+.hero__strok{
+  font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-color;
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;  
+    @media screen and (min-width: 480px){
+      width: 360px; 
+    }
+    @media screen and (min-width: 768px) {
+      width: 360px;            
+  }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.364;
+      width: 696px;
+    }
+}
 /* кнопка Заказать услугу */
 .hero__but{ 
     margin: 0 auto;

@@ -30,7 +30,7 @@
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1600px;
+    max-width: 1200px;
   }
 }
 
@@ -313,10 +313,16 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  width: 100%;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -325,6 +331,38 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    font-size: 44px;
+    line-height: 1.364;
+    width: 696px;
+  }
+}
+
+.hero__strok {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__strok {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__strok {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__strok {
     font-size: 44px;
     line-height: 1.364;
     width: 696px;
@@ -789,7 +827,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-join {
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-right: 0;
   }
 }
@@ -913,6 +952,7 @@ img {
 .subscribe__btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-style: normal;
   font-size: 16px;
   font-weight: bold;
@@ -1010,6 +1050,13 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: -30px;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .project {
